@@ -11,10 +11,10 @@ BuildTools:  ocamlbuild
 Library ring
   Path:            lib/ring
   Modules:         C, R, Z
-  InternalModules: Basic, MainTypes
+  InternalModules: Basic, Types
   BuildDepends:    lacaml
 
 Library fft
   Path:            lib/fft
-  Modules:         easyFft
+  Modules:         EasyFft
   BuildDepends:    fftw3, ring

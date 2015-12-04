@@ -1,9 +1,4 @@
 
-(** Special module for basic types. Created to shadow Bigarray
-    internal data representaion.
-
-    REMEMBER! numeration of fortran arrays begins from 1 !!! *)
-
 module BaseArray = Bigarray
 open BaseArray
 
