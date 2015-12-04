@@ -1,0 +1,8 @@
+B _build
+B _build/lib
+
+S .
+S lib/
+
+PKG lacaml
+PGK fftw3

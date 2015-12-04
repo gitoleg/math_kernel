@@ -1,0 +1,20 @@
+OASISFormat: 0.4
+Name:        box
+Version:     1.0
+Synopsis:    Ring types for more comfortable using lacaml and bigarray,
+             fftw3 wrappers 
+Authors:     Oleg Kamenkov <forown@yandex.ru>
+License:     MIT
+Plugins:     DevFiles (0.4)
+BuildTools:  ocamlbuild
+
+Library ring
+  Path:            lib/ring
+  Modules:         C, R, Z
+  InternalModules: Basic, MainTypes
+  BuildDepends:    lacaml
+
+Library fft
+  Path:            lib/fft
+  Modules:         easyFft
+  BuildDepends:    fftw3, ring
